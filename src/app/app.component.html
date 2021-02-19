@@ -1,8 +1,29 @@
 <app-header></app-header>
+<div class="container">
+    <h1>{{ title }}</h1>
 
-<div>
-  <H1>Emart</H1>
+    Home page...
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <th> Product Image</th>    
+            <th> Name</th>
+            <th> Price ($)</th>
+            <th> In Stock</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productData">
+                <!-- <td> <img [src]= getBase64ImageFromURL(product.imageUrl) alt=""></td> -->
+                <td> <img [src]= product.imageUrl alt= product.description></td>
+                <td>{{ product.name}}</td>
+                <td>{{ product.price}}</td>
+                <td> {{ product.countInStock}}</td>
+            </tr>
+
+        <!-- <img [src]='base64Image' alt=""> -->
+        </tbody>
+    </table>
 </div>
-<br><button ngbTooltip="left" placement="right">Touch me</button>
-<!-- <button ngbTooltip="I'll always open to the right" placement="right">Hover me</button> -->
+
+<router-outlet></router-outlet>
 <app-footer></app-footer>

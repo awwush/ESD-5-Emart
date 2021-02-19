@@ -1,0 +1,8 @@
+<p>imagetest works!</p>
+
+<form [formGroup]="imageForm" (ngSubmit)=addImg()>
+    Name : <input type="text" formControlName="name"/><br>
+    Image : <input type="file" formCOntrolName="image"/><br>
+    <button type="submit" value="Add image">Add image</button>
+
+</form>
