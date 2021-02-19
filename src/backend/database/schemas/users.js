@@ -1,3 +1,6 @@
+
+// not required schema
+
 const { model } = require("mongoose");
 const mongoose = require("mongoose");
 
