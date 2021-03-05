@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
 
     this.appService.getProducts().subscribe((response) => {
       this.productData = response;
-      // console.table(this.productData);
+      console.table(this.productData);
     })
 
     // let imageUrl = 'https://images-na.ssl-images-amazon.com/images/I/61jzDf1c7dL._SL1000_.jpg';

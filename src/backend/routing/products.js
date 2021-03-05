@@ -7,9 +7,10 @@ var products = require("../database/schemas/products");
 
 router.route("/")
 .get(async(req, res) => {
-    let result = await products.find();
-    console.log(result);
+    let result = await products.find().limit(5);
+    console.log("fetched from products collection.");
     res.send(result);
+    res.status(200);
 })
 
 module.exports = router;

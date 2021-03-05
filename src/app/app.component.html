@@ -1,4 +1,22 @@
-<app-header></app-header>
+<!-- ***** Preloader Start ***** -->
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  </div>  
+  <!-- ***** Preloader End ***** -->
+  
+  <app-header></app-header>
+  <!-- <app-home></app-home> -->
+  
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+
+<!-- Pratik old -->
+
+<!-- <app-header></app-header>
 <div class="container">
     <h1>{{ title }}</h1>
 
@@ -13,17 +31,15 @@
         </thead>
         <tbody>
             <tr *ngFor="let product of productData">
-                <!-- <td> <img [src]= getBase64ImageFromURL(product.imageUrl) alt=""></td> -->
                 <td> <img [src]= product.imageUrl alt= product.description></td>
                 <td>{{ product.name}}</td>
                 <td>{{ product.price}}</td>
                 <td> {{ product.countInStock}}</td>
             </tr>
 
-        <!-- <img [src]='base64Image' alt=""> -->
         </tbody>
     </table>
 </div>
 
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-footer></app-footer> -->

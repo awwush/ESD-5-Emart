@@ -1,0 +1,229 @@
+
+
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<div class="banner header-text">
+    <div class="owl-banner owl-carousel">
+      <div class="banner-item-01">
+        <div class="text-content">
+          <h4>Best Offer</h4>
+          <h2>Get your best Deals</h2>
+        </div>
+      </div>
+      <div class="banner-item-02">
+        <div class="text-content">
+          <h4>Flash Deals</h4>
+          <h2>Get your best products</h2>
+        </div>
+      </div>
+      <div class="banner-item-03">
+        <div class="text-content">
+          <h4>Fast Delivery</h4>
+          <h2>Get Best Delivery Experince</h2>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Banner Ends Here -->
+    
+    <div class="latest-products">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Latest Products</h2>
+            <a routerLink="product">view all products <i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- for loop from here -->
+
+        <table style="width: 100%;" class="table table-bordered table-striped">
+            <thead>
+                <th> Product Image</th>    
+                <th> Name</th>
+                <th> Price (Rs.)</th>
+                <th> In Stock</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of productData">
+                    <td> <img [src]= product.imageUrl alt= product.description></td>
+                    <td>{{ product.name}}</td>
+                    <td>{{ product.price}}</td>
+                    <td> {{ product.countInStock}}</td>
+                </tr>
+    
+            </tbody>
+        </table>
+
+        <!-- <div *ngFor="let product of productData" class="col-md-8">
+          <div class="product-item">
+            <div>
+                <img [src]= product.imageurl alt={{product.name}} style="height: fit-content;">
+            </div>
+            <div class="down-content">
+              <a href="#"><h4>{{product.name}}</h4></a>
+              <h6>{{product.price}}</h6>
+              <p>{{product.description}}</p>
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <span>Reviews (24)</span>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="assets/assets/images/product_02.jpg" alt=""></a>
+            <div class="down-content">
+              <a href="#"><h4>Tittle goes here</h4></a>
+              <h6>$30.25</h6>
+              <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <span>Reviews (21)</span>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="assets/assets/images/product_03.jpg" alt=""></a>
+            <div class="down-content">
+              <a href="#"><h4>Tittle goes here</h4></a>
+              <h6>$20.45</h6>
+              <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <span>Reviews (36)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="assets/assets/images/product_04.jpg" alt=""></a>
+            <div class="down-content">
+              <a href="#"><h4>Tittle goes here</h4></a>
+              <h6>$15.25</h6>
+              <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <span>Reviews (48)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="assets/assets/images/product_05.jpg" alt=""></a>
+            <div class="down-content">
+              <a href="#"><h4>Tittle goes here</h4></a>
+              <h6>$12.50</h6>
+              <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <span>Reviews (16)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="assets/assets/images/product_06.jpg" alt=""></a>
+            <div class="down-content">
+              <a href="#"><h4>Tittle goes here</h4></a>
+              <h6>$22.50</h6>
+              <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <span>Reviews (32)</span>
+            </div>
+          </div>
+        </div> -->
+      </div> 
+    </div>
+    </div>
+    
+    <div class="best-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>About E-Mart</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="left-content">
+            <h4>E-Mart : The One-stop Shopping Destination</h4>
+            <p>E-commerce is revolutionizing the way we all shop in India. 
+              Why do you want to hop from one store to another in search of the 
+              latest phone when you can find it on the Internet in a single click?
+               Not only mobiles. E-Mart houses everything you can possibly 
+               imagine, from trending electronics like laptops, tablets, 
+               smartphones, and mobile accessories to in-vogue fashion staples 
+               like shoes, clothing and lifestyle accessories; from modern 
+               furniture like sofa sets, dining tables, and wardrobes to 
+               appliances that make your life easy like washing machines, 
+               TVs, ACs, mixer grinder juicers and other time-saving kitchen 
+               and small appliances, we got 
+               them all covered. You name it, and you can stay assured about 
+               finding them all here. For those of you with erratic working hours, 
+               E-Mart is your best bet. Shop in your PJs, at night or in the wee 
+               hours of the morning. This e-commerce never shuts down.</p>
+    
+            <a href="about.html" class="filled-button">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-image">
+            <img src="assets/assets/images/feature-image.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+     
+    <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="inner-content">
+            <div class="row"></div>
+             
+                <h4>It isn't enough just looking for the quality in the products we buy,
+                  we must ensure that there is <em>quality in the lives</em> of the people who make them.</h4>
+                <p>-Orsola De Castro</p>
+    
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div> 

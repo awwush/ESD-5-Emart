@@ -1,0 +1,31 @@
+
+
+/* by pratik */
+.table{
+    border: 5px;
+    font-size: x-large;
+  }
+  
+  .image{
+      height:40em; 
+      background-size:cover;
+      width:auto;
+      /* background-image:url('../assets/shop1.jpg'); */
+      background-position:50% 50%;
+    }
+  
+  td, th{
+    width: 10%;
+    text-align : center;
+    vertical-align:text-bottom;
+  }
+  
+  td img {
+    width: 300px;
+    height: 250px;
+  }
+  
+  img {
+    height: 250px;
+    width: 250px;
+  }

@@ -10,6 +10,8 @@ import { AyurvedaComponent } from './ayurveda/ayurveda.component';
 import { ImagetestComponent } from './imagetest/imagetest.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     AyurvedaComponent,
-    ImagetestComponent
+    ImagetestComponent,
+    HomeComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
