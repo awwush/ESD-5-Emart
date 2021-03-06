@@ -6,10 +6,6 @@ import { Injectable } from '@angular/core';
 })
 export class AppService {
 
-  constructor(private httpClient : HttpClient) { }
+  constructor() { }
 
-  getProducts(){
-    let url= "http://localhost:8090/products";
-    return this.httpClient.get(url);
-  }
 }

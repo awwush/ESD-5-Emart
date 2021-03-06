@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, Observer } from 'rxjs';
 import { AppService } from './app.service';
 
 @Component({
@@ -11,16 +10,14 @@ export class AppComponent implements OnInit{
   title = 'Emart';
   productData : any;
 
-  constructor(private appService : AppService) {}
-
-  base64Image : any;
+  constructor() {}
 
   ngOnInit(): void {
 
-    this.appService.getProducts().subscribe((response) => {
-      this.productData = response;
-      console.table(this.productData);
-    })
+    // this.appService.getProducts().subscribe((response) => {
+    //   this.productData = response;
+    //   console.table(this.productData);
+    // })
 
     // let imageUrl = 'https://images-na.ssl-images-amazon.com/images/I/61jzDf1c7dL._SL1000_.jpg';
 
