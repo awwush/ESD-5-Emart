@@ -7,6 +7,7 @@ var productsSchema = new mongoose.Schema({
     price : Number,
     category : String,
     countInStock : Number,
+    rating : Number,
 });
 
 module.exports = new mongoose.model('products', productsSchema);

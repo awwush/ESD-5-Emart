@@ -1,5 +1,5 @@
 
-
+<app-header></app-header>
 <!-- Page Content -->
 <!-- Banner Starts Here -->
 <div class="banner header-text">
@@ -39,18 +39,26 @@
         <!-- for loop from here -->
 
         <table style="width: 100%;" class="table table-bordered table-striped">
-            <thead>
+            <!-- <thead>
                 <th> Product Image</th>    
                 <th> Name</th>
                 <th> Price (Rs.)</th>
                 <th> In Stock</th>
-            </thead>
+            </thead> -->
             <tbody>
                 <tr *ngFor="let product of productData">
                     <td> <img [src]= product.imageUrl alt= product.description></td>
-                    <td>{{ product.name}}</td>
-                    <td>{{ product.price}}</td>
-                    <td> {{ product.countInStock}}</td>
+                    <td class="product-details">
+                      <div class="product-name"><b> {{ product.name}} </b></div>
+                      <br>
+                      <br>
+                      <div class="product-price">Rs. {{ product.price}}</div>
+                      <br>
+                      <div class="product-countInStock"><i>Stock : {{ product.countInStock}}</i></div>
+                      <br><br>
+                      <div class="product-rating"> <img src="../../assets/images/rating/rating_{{product.rating}}.png" alt=""></div>
+                    </td>
+                
                 </tr>
     
             </tbody>
@@ -227,3 +235,6 @@
       </div>
     </div>
     </div> 
+
+
+    <app-footer></app-footer>

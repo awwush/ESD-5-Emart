@@ -3,7 +3,7 @@
 /* by pratik */
 .table{
     border: 5px;
-    font-size: x-large;
+    font-size: large;
   }
   
   .image{
@@ -14,10 +14,30 @@
       background-position:50% 50%;
     }
   
-  td, th{
-    width: 10%;
-    text-align : center;
-    vertical-align:text-bottom;
+  .product-details{
+
+    align-items: stretch;
+    padding: 30px;
+  }
+
+  .product-name {
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .product-price {
+    vertical-align: middle;
+    text-align: right;
+  }
+
+  .product-countInStock {
+    vertical-align: bottom;
+    text-align: right;
+  }
+
+  .product-rating img {
+    height: 40px;
+    width: 70px;;
   }
   
   td img {
@@ -26,6 +46,6 @@
   }
   
   img {
-    height: 250px;
+    height: 200px;
     width: 250px;
   }
